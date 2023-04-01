@@ -46,20 +46,35 @@
 			h1, h2, .core-msg {
 				color: #fff;
 			}
+			.app-pre-mount {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				top: 0;
+				margin-top: 7rem;
+			}
 			.zone-name-title {
 				font-size: 3.5rem;
 				color: #4f46e5;
 				font-weight: 900;
-				line-height: 0;
+				margin: 0;
 			}
 			.challenge-body-text {
 				font-weight: 300;
-				font-size: 3.5rem;
+				color: #fff;
+				font-size: 1.5rem;
+				margin-top: 0;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="root">
+			<div class="app-pre-mount">
+				<p class="zone-name-title">RestoreCord</p>
+				<p class="challenge-body-text">Please complete the captcha to continue</p>
+			</div>
 			<div id="app-mount">
             	::CAPTCHA_BOX::
 			</div>
