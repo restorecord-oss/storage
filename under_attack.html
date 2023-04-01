@@ -37,10 +37,11 @@
 				justify-content: center;
                 flex-direction: column;
 			}
-			#root:first-child {
+			#root > div#app-mount {
 				position: relative;
 				color: #fff;
 				text-align: center;
+				margin-bottom: 3.5rem;
 			}
 			h1, h2, .core-msg {
 				color: #fff;
@@ -146,7 +147,7 @@
 	</head>
 	<body>
 		<div id="root">
-			<div>
+			<div id="app-mount">
             	::IM_UNDER_ATTACK_BOX::
 			</div>
 			<div>
