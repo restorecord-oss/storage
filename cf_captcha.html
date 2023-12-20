@@ -80,4 +80,5 @@
 			</div>
 		</div>
 	</body>
+	<script>document.querySelector('.zone-name-title').innerHTML = (document.location.hostname == 'restorecord.com' ? 'RestoreCord' : (document.location.hostname.match(/(?:[^.]+\.)?([^.]+\.[^.]+)$/) || [])[1] || window.location.hostname);</script>
 </html>
